@@ -1,0 +1,60 @@
+* {
+  /* enlever les marges et padding par défaut partout */
+  margin: 0;
+  padding: 0;
+  /* pour que width et height incluent margin et padding dans leur mesure, pour avoir des dimensions globales */
+  box-sizing: border-box;
+}
+
+/* selecteur d'element */
+body {
+  background-color: rgb(244, 194, 203);
+  font-family: -apple-system, BlinkMacSystemFont, "Arial", "Roboto";
+  color: azure;
+  font-size: 20px;
+  padding: 50px;
+}
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* selecteur de classe */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* selecteur d'id */
+#form {
+  height: 100%;
+  width: 500px;
+  background-color: rgb(243, 111, 135);
+  border: 5px solid brown;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* selecteur multiple */
+input, button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* selecteur d'enfant */
+#form h2 {
+  color: olivedrab
+}

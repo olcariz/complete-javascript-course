@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma page de profil</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Bonjour et bienvenue dans ce cours HTML et CSS</h1>
+    <p>
+      So here we are, my name is Olivier, and I'm here to experiment quickly
+    </p>
+    <div class="container">
+      <form id="form">
+        <h2>Présentez vous</h2>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="What is your name ?"
+        />
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+    <!-- <script type="text/javascript">
+      const onSubmission = () => {
+        let name = document.createElement("p");
+        name.innerText = `Bonjour !`;
+        document.getElementById("container").append(name);
+        console.log("hello");
+      };
+
+      document.getElementById("submit").addEventListener("click", onSubmission);
+    </script> -->
+  </body>
+</html>
