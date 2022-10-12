@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 20px;
+  background-color: #222;
+  color: #eee;
+}
+
+.header {
+  border-bottom: 7px solid #eee;
+  position: relative;
+  padding: 20px;
+}
+
+.range {
+  font-size: smaller;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.number {
+  width: 100px;
+  height: 100px;
+  border-radius: 0%;
+  background-color: #eee;
+  color: #222;
+  /* positionnement centré de la boite par rapport au parent */
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  /* on redeplace la boite de sa moitié car en spécifiant left, on a aligné le coin gauche et pas le centre de la boite */
+  transform: translate(-50%);
+
+  /* alignement centré du texte dans la boite */
+  line-height: 100px;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 50px;
+}
+
+.main {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 52rem;
+}
+
+.right {
+  width: 52rem;
+}
+
+.guess {
+  font-family: inherit;
+  font-size: 40px;
+  width: 250px;
+  padding: 25px;
+  margin-bottom: 25px;
+  background-color: inherit;
+  border: 4px solid;
+  color: #eee;
+  text-align: center;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  cursor: pointer;
+  width: 180px;
+  height: 64px;
+  border-radius: 0%;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+.message {
+  margin-bottom: 100px;
+}
+
+.label-score {
+  margin-bottom: 25px;
+}
